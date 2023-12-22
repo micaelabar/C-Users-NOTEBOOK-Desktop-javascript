@@ -1,0 +1,16 @@
+function mostrarNivel9() {
+    alert("¿En qué país se encuentran cuando experimentan eventos extraños?\n1. America \n2. Londres\n3. Asia"); 
+    
+    const respuestaUsuario = prompt("Elige una opciòn (1, 2 o 3):");
+    
+    if (respuestaUsuario === "2") {
+        alert("¡Correcto! Has pasado al siguente nivel.");
+        mostrarNivel10();
+    }else if (respuestaUsuario === "2") {
+        alert("Respuesta incorrecta. ¡El juego ha terminado!");
+        reiniciarJuego(); 
+    } else if (respuestaUsuario === "3") {
+        alert("Incorrecta. Se transforman en Zombies");
+        reiniciarJuego ();
+    }
+}

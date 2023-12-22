@@ -1,0 +1,27 @@
+function mostrarNivel6() {
+    alert("¿Cuál es el giro sobrenatural que experimentan los dos jóvenes después de ser atacados?\n1.Que se transformaron en muertos vivientes\n2. Se transforman en Zombies\n3.Se transforman en animales"); 
+    
+    const respuestaUsuario = prompt("Elige una opciòn (1, 2 o 3):");
+    
+    if (respuestaUsuario === "1") {
+        alert("¡Correcto! Has pasado al siguente nivel.");
+        mostrarNivel7();
+    }else if (respuestaUsuario === "2") {
+        alert("Respuesta incorrecta. ¡El juego ha terminado!");
+        reiniciarJuego(); 
+    } else if (respuestaUsuario === "3") {
+        alert("Incorrecta. 2008");
+        reiniciarJuego ();
+    }
+}
+function reiniciarJuego() {
+    const reiniciar = confirm("¿Quieres reiniciar el juego?");
+    if (reiniciar) {
+      iniciarJuego();
+    } else {
+      alert("¡Hasta luego! Gracias por jugar.");
+    }
+  }
+
+
+  iniciarJuego();

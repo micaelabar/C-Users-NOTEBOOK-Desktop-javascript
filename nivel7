@@ -1,0 +1,16 @@
+function mostrarNivel7() {
+    alert("¿Qué consecuencias sufren los protagonistas después de ser atacados y pedir auxilio sin recibir ayuda?\n1.  son diversas y abarcan tanto aspectos físicos como psicológicos. \n2. Se transforman en Zombies\n3.Se transforman en animales"); 
+    
+    const respuestaUsuario = prompt("Elige una opciòn (1, 2 o 3):");
+    
+    if (respuestaUsuario === "1") {
+        alert("¡Correcto! Has pasado al siguente nivel.");
+        mostrarNivel8();
+    }else if (respuestaUsuario === "2") {
+        alert("Respuesta incorrecta. ¡El juego ha terminado!");
+        reiniciarJuego(); 
+    } else if (respuestaUsuario === "3") {
+        alert("Incorrecta. Se transforman en Zombies");
+        reiniciarJuego ();
+    }
+}

@@ -1,0 +1,42 @@
+function iniciarJuego() { 
+    alert("¡Bienvenido al juego del hombre lobo!");
+
+    const confirmacion = confirm("¿Estàs listo para enfrentar el peligro con el hombre lobo?");
+
+    if (confirmacion) { 
+        alert("¡Execelente! Preparate para responder preguntas sobre el hombre lobo.");
+
+        //Llamamos a la funciòn para mostrar el primer nivel
+        mostrarNivel3();
+    }else {
+        alert("¡Hasta luego! Si cambias de opiniòn, recarga la pàgina para volver a intental.");
+    }
+}
+
+function mostrarNivel4() {
+    alert("¿Quién es el director de la película?\n1.John Landis\n2 Luis Miguel\n3Juan Fernandez");  
+    
+    const respuestaUsuario = prompt("Elige una opciòn (1, 2 o 3):");
+    
+    if (respuestaUsuario === "1") {
+        alert("¡Correcto! Has pasado al siguente nivel.");
+        mostrarNivel5();
+    }else if (respuestaUsuario === "3") {
+        alert("Respuesta incorrecta. ¡El juego ha terminado!");
+        reiniciarJuego(); 
+    } else if (respuestaUsuario === "1") {
+        alert("Incorrecta. Juan Fernandez");
+        reiniciarJuego ();
+        }
+    }
+    function reiniciarJuego() {
+        const reiniciar = confirm("¿Quieres reiniciar el juego?");
+        if (reiniciar) {
+          iniciarJuego();
+        } else {
+          alert("¡Hasta luego! Gracias por jugar.");
+        }
+      }
+    
+    
+      iniciarJuego();

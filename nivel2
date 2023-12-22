@@ -1,0 +1,33 @@
+function mostrarNivel2() {
+    alert("¿Cómo se describe la actitud de la gente en la aislada zona rural?\n1.Actitud Extraña\n2Malos.\n3Felicesl"); 
+    
+    const respuestaUsuario = prompt("Elige una opciòn (1, 2 o 3):");
+    
+    if (respuestaUsuario === "1") {
+        alert("¡Correcto! Has pasado al siguente nivel.");
+        mostrarNivel3();
+    }else if (respuestaUsuario === "3") {
+        alert("Respuesta incorrecta. ¡El juego ha terminado!");
+        reiniciarJuego(); 
+    } else if (respuestaUsuario === "2") {
+        alert("Incorrecta. Malo");
+        reiniciarJuego ();
+        }
+    }
+
+
+function iniciarJuego() { 
+    alert("¡Bienvenido al juego del hombre lobo!");
+
+    const confirmacion = confirm("¿Estàs listo para enfrentar el peligro con el hombre lobo?");
+
+    if (confirmacion) { 
+        alert("¡Execelente! Preparate para responder preguntas sobre el hombre lobo.");
+
+        //Llamamos a la funciòn para mostrar el primer nivel
+        mostrarNivel3();
+    }else {
+        alert("¡Hasta luego! Si cambias de opiniòn, recarga la pàgina para volver a intental.");
+    }
+}
+   
